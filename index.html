@@ -3,9 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu portifolio elaborata</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
-<body>
-    teste de hospedagem 
+<body>  
+    <!--versao mobile-->
+    <header class="md:hidden flex justify-end p-4">
+        <nav>
+            <img src="assets/menu.svg" alt="">
+        </nav>
+    </header>
+    <!--versao desktop-->
+    <header>
+        <div class="hidden md:flex justify-end gap-4 p-2 font-bold">    
+        <nav>
+            <span>Works</span>
+        </nav>
+        <nav>
+            <span>Blog</span>
+        </nav>
+        <nav>
+            <span>contato</span>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner-principal flex flex-col m-5">
+            <section class="md:flex md:flex-row-reverse">
+            <section class="foto flex justify-center">
+                <img src="assets/Ellipse 1.png" alt="">
+            </section>
+            <section class="flex flex-col md:w-10/12">
+            <section class="texto-apresentacao text-3xl md:text-6xl font-semibold">Ola, sou aluno do curso de front-end da elaborata
+            </section>
+            <section class="texto-secundario text-base font-normal mt-4">Minhas habilidades em HTML, CSS e JavaScript podem estar em estágios iniciais, mas estou comprometido em aprimorá-las a
+            cada dia. Estou empolgado em transformar conceitos simples em interfaces interativas e amigáveis, e estou constantemente
+            explorando novos recursos e técnicas para elevar minhas habilidades.
+            </section>
+            </section>
+            </section>
+            <section class="flex justify-center gap-4 p-4">
+                <button class="bg-red-600 p-3 text-center font-bold text-sm text-white rounded-sm cursor-pointer flex items-center">DOWLOAD CV</button>
+            </section>
+        </section>
+
+        <section class="posts-recentes bg-sky-100 flex flex-col  gap-4 ">
+            <section class="text-lg flex justify-center lg:justify-start">
+                Posts-recentes
+            </section>
+            <div class="hidden md:flex md:justify-end text-blue-500">ver tudo</div>
+            
+            <section class="flex flex-col md:flex-row">
+            <section class="bg-white items-center m-5 p-3 w-5/6 shadow-md">
+                <div class="font-bold">front-end elaborata</div>
+                <div class="flex gap-4 py-4">    
+                    <div>12 Fev 2023</div>
+                    <div class="border-r border-red-400"></div>
+                    <div>Javascript</div>
+                </div>
+                <div>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                </div>
+            </section>
+            <section class="bg-white items-center m-5 p-3 w-5/6 shadow-md">
+                <div class="font-bold"> Creating pixel perfect icons in Figma</div>
+                <div class="flex gap-4 py-4">
+                    <div>12 Fev 2020</div>
+                    <div class="border-r border-red-400"></div>
+                    <div>Javascript</div>
+                </div>
+                <div>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                </div>
+            </section>
+            </section>
+        </section>
+        <section class="meu-portifolio p-6">
+                <div class="text-lg flex justify-center md:justify-start">Meu portifólio</div>
+                
+                <div class="flex flex-col md:flex-row m-4">
+                <div><img src="assets/Rectangle 30-lg.png" alt=""></div>
+                <div class="flex flex-col gap-2 p-2">
+                <div class="mt-6 font-bold text-blue-950">designing dashboards</div>
+                <div class="flex gap-4 items-center">
+                <div class="bg-blue-950 text-white px-4 py-1 rounded-full text-xs">2020</div>
+                <div>dashboard</div>
+                </div>
+                <div>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+                </div>
+                </div>
+
+                <div class="hidden md:flex flex-col md:flex-row m-4">
+                    <div><img src="assets/Rectangle 32 (1).jpg" alt=""></div>
+                    <div class="flex flex-col gap-2 p-2">
+                        <div class="mt-6 font-bold text-blue-950">Vibrant Portraits of 2020</div>
+                        <div class="flex gap-4 items-center">
+                            <div class="bg-blue-950 text-white px-4 py-1 rounded-full text-xs">2018</div>
+                            <div>illustration</div>
+                        </div>
+                        <div>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                            velit
+                            mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex flex-col md:flex-row m-4">
+                    <div><img src="assets/Rectangle 34.png" alt=""></div>
+                    <div class="flex flex-col gap-2 p-2">
+                        <div class="mt-6 font-bold text-blue-950">36 Days of Malayalam type</div>
+                        <div class="flex gap-4 items-center">
+                            <div class="bg-blue-950 text-white px-4 py-1 rounded-full text-xs">2020</div>
+                            <div>typography</div>
+                        </div>
+                        <div>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                            velit
+                            mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer class="bottom-0 left-0 z-20 w-full p-4 flex justify-center gap-3" >
+        <section class="flex flex-col">
+        <div class="flex justify-between">
+        <img src="assets/fb.png" alt="">
+        <img src="assets/insta.png" alt="">
+        <img src="assets/twiter.png" alt="">
+        <img src="assets/Linkedin.png" alt="">
+        </div>
+        <div class="p-4">Copyright ©2020 All rights reserved</div>
+        </section>
+    </footer>
 </body>
 </html>
